@@ -24,13 +24,12 @@ let operator = "";
 let secondNum = "";
 const operators = ["+", "-", "*", "/"];
 
-// button eventlistener
 const calculatorButtonContainer = document.querySelector(
 	"#calc-button-container"
 );
 
 calculatorButtonContainer.addEventListener("click", (e) => {
-	let buttonPressed = e.target.innerHTML;
+	let buttonPressed = e.target.innerText;
 
 	if (!isNaN(buttonPressed)) {
 		numDisplay(buttonPressed);
@@ -64,9 +63,3 @@ function numDisplay(num) {
 		firstNum += num;
 	}
 }
-
-// if is number add to display of calculation (concat numbers as strings)
-// if is not number switch case
-// if it is an operator check save and display the operator and start listening for second number
-// if it is "C" clear the display and values
-// if it is "=" try to do the calculation

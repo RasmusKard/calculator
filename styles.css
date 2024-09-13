@@ -49,14 +49,19 @@ button {
 	font-size: 4vh;
 }
 
-#calc-display {
+#calc-display-container {
 	width: 90vw;
 	max-width: 50rem;
+	padding: 1rem;
 	border: inset 0.25rem #4eff00;
 	background-color: black;
-	height: 4rem;
+	min-height: 4rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+}
+
+#calc-display {
+	overflow: hidden;
 }

@@ -12,10 +12,9 @@ body {
 	font-family: "Courier Prime", monospace;
 	font-weight: 400;
 	font-style: italic;
+	font-size: 4vh;
 	box-sizing: border-box;
-	margin: 0;
 	margin-top: 20px;
-	padding: 0;
 }
 
 #calc-button-container {
@@ -45,6 +44,7 @@ button {
 	flex-basis: 100%;
 	background-color: #232327;
 	color: #4eff00;
+	font-size: 4vh;
 }
 
 #calc-display {

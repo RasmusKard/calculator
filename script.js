@@ -41,7 +41,7 @@ calculatorButtonContainer.addEventListener("click", (e) => {
 		} else {
 			operator = buttonPressed;
 		}
-	} else if (buttonPressed === "=") {
+	} else if (buttonPressed === "=" && firstNum && operator && secondNum) {
 		firstNum = operate(firstNum, operator, secondNum);
 		operator = "";
 		secondNum = "";
